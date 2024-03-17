@@ -44,10 +44,9 @@ class FeedPage extends StatelessWidget {
           Container(
             height: 100.0,
             margin: const EdgeInsets.all(8.0),
-            // Використовуємо ListView для горизонтальної прокрутки
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 6, // Кількість елементів у списку
+              itemCount: 6,
               itemBuilder: (context, index) => StoryCircle(index: index),
             ),
           ),
